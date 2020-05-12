@@ -126,8 +126,4 @@ class HomeController extends Controller
         $log->update(['messages' => serialize((array)$newLog)]);
         return response()->json(['status' => true, 'phase' => $nextPhase, 'target' => $newTarget], 200);
     }
-
-    public function payementProcess(Request $request) {
-
-    }
 }
